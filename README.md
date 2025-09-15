@@ -4,12 +4,20 @@ Restore SSH keys from LastPass to a new machine with one command.
 
 ## Quick Start
 
+**If you already have LastPass CLI and are logged in:**
 ```bash
-# Install LastPass CLI and login first
+curl -sSL https://raw.githubusercontent.com/nixfred/lastpass-ssh-restore/main/restore-keys.sh | bash
+```
+
+**First time setup:**
+```bash
+# Install LastPass CLI
 sudo apt install lastpass-cli  # or: brew install lastpass-cli
+
+# Login to LastPass
 lpass login your@email.com
 
-# Then run the restore script directly from GitHub
+# Run the restore script
 curl -sSL https://raw.githubusercontent.com/nixfred/lastpass-ssh-restore/main/restore-keys.sh | bash
 ```
 
