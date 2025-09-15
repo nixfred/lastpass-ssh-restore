@@ -28,7 +28,7 @@ echo "[0] Quit"
 
 # Get selection
 echo ""
-read -p "Enter number: " num
+read -p "Enter number: " num < /dev/tty
 
 if [ "$num" = "0" ] || [ -z "$num" ]; then
     exit 0
